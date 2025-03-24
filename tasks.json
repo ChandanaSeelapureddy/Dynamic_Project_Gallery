@@ -1,0 +1,84 @@
+{
+    "works": {
+        "task1": { 
+            "title": "Basic HTML Styling", 
+            "url": "works/task1/index.html",
+            "description": "This task is to create an index page and a dashboard page using HTML styling, including text formatting and colors."
+        },
+        "task2": { 
+            "title": "CSS Hover functionality to enhance UI interactions. ", 
+            "url": "works/task2/index.html",
+            "description": "It creates an interactive, colorful text animation where each letter enlarges on hover."
+        },
+        "task3": { 
+            "title": "Simple Welcome Alert with User Input", 
+            "url": "works/task3/index.html",
+            "description": "It prompts the user to enter their name and displays a welcome message in an alert box when the button is clicked."
+        },
+        "task4": { 
+            "title": "Simple Calculator for Basic Arithmetic Operations", 
+            "url": "works/task4/index.html",
+            "description": "It allows users to input two numbers and perform addition, subtraction, multiplication, and division, displaying the result in a disabled input field."
+        },
+        "task5": { 
+            "title": "JavaScript Arithmetic and Assignment Operators Demonstration", 
+            "url": "works/task5/index.html",
+            "description": "This demonstrates the use of assignment and arithmetic operators in JavaScript by performing various operations and logging the results to the console."
+        },
+        "task6": { 
+            "title": "Live Text Uppercase Converter", 
+            "url": "works/task6/String Operation.html",
+            "description": "This converts user input to uppercase and displays the result in a disabled output field."
+        },
+        "task7": { 
+            "title": "Simple Grade Calculator", 
+            "url": "works/task7/calculator.html",
+            "description": "It calculates and displays a letter grade (A, B, C, or F) based on the user's input score."
+        },
+        "task8": { 
+            "title": "Task Call Stack Manager", 
+            "url": "works/task8/call stack.html",
+            "description": "It allows users to add tasks to a stack, display them in a process line, and undo the last added task using JavaScript."
+        },
+        "task9": { 
+            "title": "Star Pattern Generator", 
+            "url": "works/task9/loops.html",
+            "description": "This dynamically generates a right-angled triangle star pattern based on the user's input number and displays it."
+        },
+        "task10": { 
+            "title": "Star Pattern Generator with Color Change", 
+            "url": "works/task10/star_loops.html",
+            "description": "This generates a star pattern based on user input and dynamically changes the text color based on the input value."
+        },
+        "task11": { 
+            "title": "While & Do-While Loop Execution Based on Last Digit", 
+            "url": "works/task11/while_do_while.html",
+            "description": "Checks the last digit of a user-entered number and executes either a while loop (if even) or a do-while loop (if odd) to display loop iterations dynamically."
+        },
+        "task12": { 
+            "title": "Car Information Tracker", 
+            "url": "works/task12/class_object.html",
+            "description": "Allows users to enter and store car details, and then display the information for all stored cars in a formatted list."
+        },
+        "task13": { 
+            "title": "Car Inventory Management System", 
+            "url": "works/task13/class_object.html",
+            "description": "Allows users to manage a car inventory by adding car details, viewing the inventory, searching for cars by make or model, and clearing inputs or display information."
+        },
+        "task14": { 
+            "title": "Age Calculator", 
+            "url": "works/task14/Age_calculate.html",
+            "description": "Calculates a user's age based on their inputted date of birth and displays the result."
+        },
+        "task15": { 
+            "title": "Checkout Page", 
+            "url": "works/task15/bootstrap_checkout.html",
+            "description": "A responsive checkout form using Bootstrap that collects billing address, payment information, and offers options for saving information and selecting payment methods (credit card, debit card, PayPal). It includes sections for name, email, address, and card details."
+        },
+        "task16": { 
+            "title": "Class Works Portal", 
+            "url": "works/task16/task_json_iframe/index.html",
+            "description": "A simple webpage with a header, a navigation section, and an embedded iframe to display the content. It uses JSON array of objects."
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       <script>
+
+        function calculate(){
+let s=parseFloat(document.getElementById("score_input").value);
+let result="";
+if(s>=80){
+result="A";
+}
+else if(s>=60 && s<=79){
+result="B";
+}
+else if(s>=40 && s<=59){
+result="C";
+}
+else
+{
+result="F";
+}
+document.getElementById("grade_span").innerHTML=result;
+}
+
+    </script>
+    
+    </head>
+
+    <body>
+       <h3> Grade Calculator</h3>
+       <input placeholder="Enter score" id="score_input" onkeyup="calculate()">
+        Your grade is : <span id="grade_span"></span>
+    </body>
+</html>

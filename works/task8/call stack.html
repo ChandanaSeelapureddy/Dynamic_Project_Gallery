@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Task Call Stack
+        </title>  
+    </head>
+
+<script>
+
+const taskStack = [];
+function addTask() {
+const taskName = document.getElementById("task_input").value.trim();
+if (taskName) {
+taskStack.push(taskName);
+document.getElementById("task_input").value = "";
+updatePipeline();
+} else {
+alert("Please enter a task name.");
+}
+}
+function undoTask() {
+if (taskStack.length) {
+taskStack.pop();
+updatePipeline();
+} else {
+alert("No tasks to undo.");
+}
+}
+function updatePipeline() {
+document.getElementById("task_list").innerHTML = taskStack.map(task => `<li>${task}</li>`).join('');
+}
+
+</script>
+
+
+    <body>
+
+        <div>
+            <input type="text" id="task_input" placeholder="Enter Task Name" />
+            <button onclick="addTask()">Add Task</button>
+            <button onclick="undoTask()">Undo Task</button>
+        </div>
+
+        <div>
+            <div id="pipeline">
+                <h2>Process Line:</h2>
+                <ul id="task_list"></ul>
+            </div>
+        </div>
+
+        <script src="stack.js"></script>
+        
+    </body>
+</html>

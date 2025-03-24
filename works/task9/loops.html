@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script>
+        
+    function print_star(){
+    let text="";
+    let n=parseFloat(document.getElementById("star_input").value);
+    for(let i=0;i<=n;i++)
+   {
+    for(let j=0;j<i;j++){
+        text+="* ";
+    }
+    text+="<br>";
+    }
+document.getElementById("demo_div").innerHTML=text;
+}
+    </script>
+  </head>
+  <body>
+    <input placeholder="Enter a number" id="star_input" onkeyup="print_star()">
+    <div id="demo_div"></div>
+  </body>
+
+</html>

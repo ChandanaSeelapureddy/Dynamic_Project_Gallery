@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const cars = [];
+
+            function insert() {
+                let make = document.getElementById("make").value;
+                let model = document.getElementById("model").value;
+                let year = document.getElementById("year").value;
+                let color = document.getElementById("color").value;
+
+                let car = {
+                    make: make,
+                    model: model,
+                    year: year,
+                    color: color,
+                    description: function () {
+                        return `Info: ${this.make} ${this.model} ${this.year} ${this.color}`;
+                    }
+                };
+
+                cars.push(car);
+                alert("Car information inserted!");
+            }
+
+            function show_car_info() {
+                let text = "";
+                cars.forEach(car => {
+                    text += car.description() + "<br>";
+                });
+
+                document.getElementById("demo_div").innerHTML = text;
+            }
+        </script>
+
+        <input placeholder="Enter make" id="make"/>
+        <input placeholder="Enter Model" id="model"/>
+        <input placeholder="Enter Year" id="year"/>
+        <input placeholder="Enter color" id="color"/>
+        <button onclick="insert()">Insert Info</button>
+        <button onclick="show_car_info()">Show Info</button>
+        <div id="demo_div"></div> 
+    </body>
+</html>

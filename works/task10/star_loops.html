@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      #demo_div {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+    <script>
+        
+    function print_star(){
+    let text="";
+    let n=parseFloat(document.getElementById("star_input").value);
+    let demoDiv = document.getElementById("demo_div");
+
+    let color;
+        if (n < 15) {
+          color = "red";
+        } else if (n < 50) {
+          color = "blue";
+        } else {
+          color = "green";
+        }
+    for(let i=0;i<=n;i++)
+   {
+    for(let j=0;j<i;j++){
+        text+="* ";
+    }
+    text+="<br>";
+    }
+    demoDiv.innerHTML = text;
+    demoDiv.style.color = color;
+}
+    </script>
+  </head>
+  <body>
+    <input placeholder="Enter a number" id="star_input" onkeyup="print_star()">
+    <div id="demo_div"></div>
+  </body>
+
+</html>

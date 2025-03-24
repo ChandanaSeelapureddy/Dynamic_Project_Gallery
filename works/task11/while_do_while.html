@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>While & Do-While Loop Execution</title>
+    <script>
+      function checkLastDigit() {
+        let inputStr = document.getElementById("num_input").value;
+        let outputDiv = document.getElementById("output");
+        let lastChar = inputStr.trim().slice(-1); // Get the last character
+        let lastDigit = parseInt(lastChar); // Convert it to an integer
+
+        outputDiv.innerHTML = ""; // Clear previous output
+
+        if (isNaN(lastDigit)) {
+          outputDiv.innerHTML = "Please enter a valid number.";
+          return;
+        }
+
+        let count = 1;
+        let text = "";
+
+        if (lastDigit % 2 === 0) {
+          // Execute while loop if last digit is even
+          while (count <= 5) {
+            text += `While Loop Iteration: ${count} <br>`;
+            count++;
+          }
+        } else {
+          // Execute do-while loop if last digit is odd
+          do {
+            text += `Do-While Loop Iteration: ${count} <br>`;
+            count++;
+          } while (count <= 5);
+        }
+
+        outputDiv.innerHTML = text;
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Enter a number:</h3>
+    <input type="text" id="num_input" onkeyup="checkLastDigit()" placeholder="Enter a number">
+    <div id="output"></div>
+  </body>
+</html>
+
